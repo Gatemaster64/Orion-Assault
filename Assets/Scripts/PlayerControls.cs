@@ -1,39 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class PlayerControls : MonoBehaviour
 {
 
-    [SerializeField] InputAction movement;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    void OnEnable()
-    {
-        movement.Enable();  
-    }
-
-    void OnDisable()
-    {
-        movement.Disable();
-    }
-
-    // Update is called once per frame
+    [SerializeField] float controlSpeed = 10f;
+     // Update is called once per frame
     void Update()
     {
-        float horizontalThrow = movement.ReadValue<Vector2>().x;
-        float verticalThrow = movement.ReadValue<Vector2>().y;
+        
 
-        // float horizontalThrow = Input.GetAxis("Horizontal");
-        Debug.Log(horizontalThrow);
+        float xThrow = Input.GetAxis("Horizontal");
+        float yThrow = Input.GetAxis("Vertical");
 
-        // float verticalThrow = Input.GetAxis("Vertical");
-        Debug.Log(verticalThrow);
+        float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float yOffset = yThrow * Time.deltaTime * controlSpeed;
+
+        float newXpos = transform.localPosition.x + xOffset;
+        float newypos = transform.localPosition.y + yOffset;
+
+        transform.localPosition = new Vector3 (newXpos, newypos ,transform.localPosition.z);
+        
     }
 }
