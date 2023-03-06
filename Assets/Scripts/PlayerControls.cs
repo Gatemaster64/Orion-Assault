@@ -7,7 +7,13 @@ public class PlayerControls : MonoBehaviour
 {
 
     [SerializeField] float controlSpeed = 10f;
-     // Update is called once per frame
+
+    [SerializeField] float xRange = 10f;
+    [SerializeField] float yRange = 7f;
+
+
+
+
     void Update()
     {
         
@@ -16,12 +22,14 @@ public class PlayerControls : MonoBehaviour
         float yThrow = Input.GetAxis("Vertical");
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float rawXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+
         float yOffset = yThrow * Time.deltaTime * controlSpeed;
+        float rawYPos = transform.localPosition.y + yOffset;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
-        float newXpos = transform.localPosition.x + xOffset;
-        float newypos = transform.localPosition.y + yOffset;
-
-        transform.localPosition = new Vector3 (newXpos, newypos ,transform.localPosition.z);
+        transform.localPosition = new Vector3 (clampedXPos, clampedYPos ,transform.localPosition.z);
         
     }
 }
