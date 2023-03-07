@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
+    // variables for adjusting controlspeed and range to constrain movement.
 
     [SerializeField] float controlSpeed = 10f;
 
@@ -16,8 +17,22 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
-        
+        // variables to get the Horizontal & Vertical input
 
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+     void ProcessRotation()
+    {
+        transform.localRotation = Quaternion.Euler(xRange - 30f, 30f, 0f);
+    }
+
+
+
+
+    void ProcessTranslation()
+    {
         float xThrow = Input.GetAxis("Horizontal");
         float yThrow = Input.GetAxis("Vertical");
 
@@ -29,7 +44,6 @@ public class PlayerControls : MonoBehaviour
         float rawYPos = transform.localPosition.y + yOffset;
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
-        transform.localPosition = new Vector3 (clampedXPos, clampedYPos ,transform.localPosition.z);
-        
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
