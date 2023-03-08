@@ -16,6 +16,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
 
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -20f;
+
     // Declaring variables for xthrow and ythrow.
     float xThrow; 
     float yThrow;
@@ -37,12 +40,14 @@ public class PlayerControls : MonoBehaviour
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
 
+        float yawDueToPosition = transform.localPosition.x * positionYawFactor;
 
+        float rollDueToControlThrow = xThrow * controlRollFactor;
 
 
         float pitch = pitchDueToPosition + pitchDueToControlThrow;
-        float yaw = 0f;
-        float roll = 0f;
+        float yaw = yawDueToPosition;
+        float roll = rollDueToControlThrow;
         transform.localRotation = Quaternion.Euler(xRange - pitch, yaw, roll);
     }
 
