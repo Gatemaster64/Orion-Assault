@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: yRange
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: controlPitchFactor
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 2783699850519785273, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: m_RootOrder
       value: 1

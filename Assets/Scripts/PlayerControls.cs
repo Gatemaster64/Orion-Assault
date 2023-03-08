@@ -13,6 +13,13 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float yRange = 7f;
 
 
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -10f;
+
+    // Declaring variables for xthrow and ythrow.
+    float xThrow; 
+    float yThrow;
+
 
 
     void Update()
@@ -25,7 +32,18 @@ public class PlayerControls : MonoBehaviour
 
      void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(xRange - 30f, 30f, 0f);
+        //
+
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+
+
+
+
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = 0f;
+        float roll = 0f;
+        transform.localRotation = Quaternion.Euler(xRange - pitch, yaw, roll);
     }
 
 
@@ -33,8 +51,8 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessTranslation()
     {
-        float xThrow = Input.GetAxis("Horizontal");
-        float yThrow = Input.GetAxis("Vertical");
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
