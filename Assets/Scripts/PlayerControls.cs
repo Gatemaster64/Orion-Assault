@@ -7,7 +7,7 @@ public class PlayerControls : MonoBehaviour
 {
     // variables for adjusting controlspeed and range to constrain movement.
 
-    [SerializeField] float controlSpeed = 10f;
+    [SerializeField] float controlSpeed = 8f;
 
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
@@ -35,7 +35,7 @@ public class PlayerControls : MonoBehaviour
 
      void ProcessRotation()
     {
-        //
+        // Get the pitch,yaw & roll and adjusting it based on the position & player input.
 
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -55,6 +55,10 @@ public class PlayerControls : MonoBehaviour
 
 
     void ProcessTranslation()
+
+        // Use variiables to get the player input.
+        // Adjust the player movement by Time.deltaTime & Controlspeed variable
+        // Also use clampedPos variable to constrain the movement.
     {
         xThrow = Input.GetAxis("Horizontal");
         yThrow = Input.GetAxis("Vertical");
