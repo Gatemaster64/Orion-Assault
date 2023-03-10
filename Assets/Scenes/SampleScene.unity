@@ -401,7 +401,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -619,8 +619,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1929625062}
     m_Modifications:
     - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: xRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: yRange
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: controlRollFactor
