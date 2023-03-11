@@ -480,6 +480,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7009184246285463784, guid: 3ed28766202c882449820820ed6eff16, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009184246285463784, guid: 3ed28766202c882449820820ed6eff16, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5952188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009184246285463784, guid: 3ed28766202c882449820820ed6eff16, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.21226418
+      objectReference: {fileID: 0}
     - target: {fileID: 7030024437093476628, guid: 3ed28766202c882449820820ed6eff16, type: 3}
       propertyPath: m_Name
       value: Player Rig
