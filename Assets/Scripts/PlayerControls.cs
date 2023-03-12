@@ -12,6 +12,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
 
+    // Declaring an array for the lasers.
+    [SerializeField] GameObject[] lasers;
+
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
@@ -83,16 +86,30 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetButton("Fire1"))
         {
-            Debug.Log("Shooting");
+            ActiveLasers();
         }
 
         else
         {
-            Debug.Log("I'm not shooting");
+            DeactivateLasers();
         }
 
 
     }
 
+    void ActiveLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(true);
+        }
+    }
 
+    void DeactivateLasers()
+    {
+       foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
 }
