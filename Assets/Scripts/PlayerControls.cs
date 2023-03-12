@@ -23,7 +23,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlRollFactor = -20f;
 
     // Declaring variables for xthrow and ythrow.
-    float xThrow; 
+    float xThrow;
     float yThrow;
 
 
@@ -37,7 +37,7 @@ public class PlayerControls : MonoBehaviour
         ProcessFiring();
     }
 
-     void ProcessRotation()
+    void ProcessRotation()
     {
         // Get the pitch,yaw & roll and adjusting it based on the position & player input.
 
@@ -60,9 +60,9 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessTranslation()
 
-        // Use variiables to get the player input.
-        // Adjust the player movement by Time.deltaTime & Controlspeed variable
-        // Also use clampedPos variable to constrain the movement.
+    // Use variiables to get the player input.
+    // Adjust the player movement by Time.deltaTime & Controlspeed variable
+    // Also use clampedPos variable to constrain the movement.
     {
         xThrow = Input.GetAxis("Horizontal");
         yThrow = Input.GetAxis("Vertical");
@@ -78,7 +78,7 @@ public class PlayerControls : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 
-     void ProcessFiring()
+    void ProcessFiring()
     {
         // if pushing fire button
         // then print shooting
@@ -86,30 +86,23 @@ public class PlayerControls : MonoBehaviour
 
         if (Input.GetButton("Fire1"))
         {
-            ActiveLasers();
+            SetLasersActive(true);
         }
 
         else
         {
-            DeactivateLasers();
+            SetLasersActive(false);
         }
 
 
     }
 
-    void ActiveLasers()
+    void SetLasersActive(bool isActive)
     {
         foreach (GameObject laser in lasers)
         {
-            laser.SetActive(true);
-        }
-    }
-
-    void DeactivateLasers()
-    {
-       foreach (GameObject laser in lasers)
-        {
-            laser.SetActive(false);
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
         }
     }
 }
