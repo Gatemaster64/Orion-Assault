@@ -145,6 +145,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7030024437093476631}
     m_Modifications:
+    - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 3853933615565272040}
+    - target: {fileID: 4433942096068564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1250878757588581904}
     - target: {fileID: 2783699850519785273, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -213,8 +225,22 @@ PrefabInstance:
       propertyPath: TrailModule.lifetime.scalar
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8644038794440206564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+--- !u!1 &1250878757588581904 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6232377732160633355, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+  m_PrefabInstance: {fileID: 5125616567829857307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3853933615565272040 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8239956917698394099, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+  m_PrefabInstance: {fileID: 5125616567829857307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7025731277383871266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2783699850519785273, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
