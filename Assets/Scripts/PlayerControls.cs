@@ -30,7 +30,7 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
-        // variables to get the Horizontal & Vertical input
+        // variables to get the Horizontal & Vertical input & Firing input
 
         ProcessTranslation();
         ProcessRotation();
@@ -81,8 +81,8 @@ public class PlayerControls : MonoBehaviour
     void ProcessFiring()
     {
         // if pushing fire button
-        // then print shooting
-        // else don't print shooting
+        // then do the method to set lasers active, Else do the method to deactivate lasers.
+        // Use bool true/false statement to check if the button is being pressed.
 
         if (Input.GetButton("Fire1"))
         {
@@ -98,6 +98,8 @@ public class PlayerControls : MonoBehaviour
     }
 
     void SetLasersActive(bool isActive)
+
+        // for each GameObject in the array lasers, do the underlying code.
     {
         foreach (GameObject laser in lasers)
         {
