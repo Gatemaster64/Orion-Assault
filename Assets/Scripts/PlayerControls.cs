@@ -5,21 +5,32 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
+    [Header("General Setup Settings")]
     // variables for adjusting controlspeed and range to constrain movement.
-
+    [Tooltip("How fast ship moves up and down based upon player input")]
     [SerializeField] float controlSpeed = 8f;
-
+    [Tooltip("Set the range for how far the ship can go horizontally")]
     [SerializeField] float xRange = 10f;
+    [Tooltip("Set the range for how far the ship can go vertically")]
     [SerializeField] float yRange = 7f;
 
     // Declaring an array for the lasers.
+    [Header("Laser gun array")]
+    [Tooltip("Add all player lasers here")]
     [SerializeField] GameObject[] lasers;
 
 
-    [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -10f;
 
+    [Header("Screen position based tuning")]
+    [Tooltip("Field to change the amount the ship rotates up or down based upon the position")]
+    [SerializeField] float positionPitchFactor = -2f;
+    [Tooltip("Field to change the amount the ship rotates left or right based upon the position")]
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Player Input based tuning")]
+    [Tooltip("Field to change the amount the ship rotates up or down based upon the player input")]
+    [SerializeField] float controlPitchFactor = -10f;
+    [Tooltip("Field to change the amount the ship rolls left or right based upon the player input")]
     [SerializeField] float controlRollFactor = -20f;
 
     // Declaring variables for xthrow and ythrow.
