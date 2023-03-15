@@ -157,6 +157,14 @@ PrefabInstance:
       propertyPath: lasers.Array.data[1]
       value: 
       objectReference: {fileID: 1250878757588581904}
+    - target: {fileID: 583007503458529498, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: crashVFX
+      value: 
+      objectReference: {fileID: 4041493791267722494}
+    - target: {fileID: 583007503458529498, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: explosionParticles
+      value: 
+      objectReference: {fileID: 4041493791267722494}
     - target: {fileID: 2783699850519785273, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -227,6 +235,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8644038794440206564, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166967279901905125, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+      propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -239,6 +251,11 @@ GameObject:
 --- !u!1 &3853933615565272040 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8239956917698394099, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
+  m_PrefabInstance: {fileID: 5125616567829857307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4041493791267722494 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9166967279901905125, guid: 1bec614a742086f4d9447529b28f90dd, type: 3}
   m_PrefabInstance: {fileID: 5125616567829857307}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7025731277383871266 stripped
