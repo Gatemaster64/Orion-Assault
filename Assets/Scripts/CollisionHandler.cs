@@ -6,13 +6,8 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
 
-    [SerializeField] float levelLoadDelay = 1f;
-    private void OnCollisionEnter (Collision other)
-    // When colliding with something get information of the other object collided with 
-    {
-        StartCrashSequence();
-        //Debug.Log(this.name + "--Collided with--" + other.gameObject.name);
-    }
+    [SerializeField] float loadDelay = 1f;
+    
     
     void OnTriggerEnter(Collider other)
     {
@@ -24,7 +19,7 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {
         GetComponent<PlayerControls>().enabled = false;
-        Invoke("ReloadLevel", levelLoadDelay);
+        Invoke("ReloadLevel", loadDelay);
     }
 
 
