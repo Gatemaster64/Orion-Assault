@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7321189356714019247}
   - component: {fileID: 1314459754891612127}
   - component: {fileID: 8990554215193571690}
+  - component: {fileID: 4315169111035081892}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Enemy Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8573469390080928231}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 433.49, y: 19.09, z: 120.93}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,15 +227,15 @@ ParticleSystem:
       maxColor: {r: 0.08627449, g: 0.58351207, b: 0.85882354, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.19575472, g: 0.7830189, b: 0.74708146, a: 1}
+        key0: {r: 0.8301887, g: 0.012356869, b: 0.003915994, a: 1}
         key1: {r: 0.19575472, g: 0.7830189, b: 0.74708146, a: 1}
-        key2: {r: 0.016242431, g: 0.42559272, b: 0.6886792, a: 0}
+        key2: {r: 0.8113208, g: 0.63316256, b: 0.08802067, a: 0}
         key3: {r: 0.05873977, g: 0.3773585, b: 0.3493523, a: 0}
         key4: {r: 0.19575472, g: 0.7830189, b: 0.74708146, a: 0}
         key5: {r: 0.13207549, g: 0.10528659, b: 0.10528659, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
+        ctime0: 21781
         ctime1: 21974
         ctime2: 53392
         ctime3: 43562
@@ -4762,7 +4763,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 157ddbe72804be2458745cf47c73da85, type: 2}
-  - {fileID: 2100000, guid: 2ee365f7bb02bd34e92396f1b3507d28, type: 2}
+  - {fileID: 2100000, guid: 0ee3a87a48e3f06488d1fea0f0093d08, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4813,3 +4814,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &4315169111035081892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573469390080928231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a8707013ea22f4a83a4d7c32a40f62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTillDestroy: 3
