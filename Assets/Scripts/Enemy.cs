@@ -9,12 +9,15 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
 
+    ScoreBoard scoreBoard;
 
+    void Start()
+        // Find first object in project named scoreboard.
+    {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+    }
 
-
-
-
-    private void OnParticleCollision(GameObject other)
+     void OnParticleCollision(GameObject other)
     {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
