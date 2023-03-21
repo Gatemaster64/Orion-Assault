@@ -227,7 +227,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!136 &200199359
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!136 &653563816
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!136 &775768530
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!136 &1173461082
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 6
+  maxHealth: 10
 --- !u!1 &1898499666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!1 &1921250265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   parent: {fileID: 807187910}
   scorePerHit: 15
-  maxHealth: 3
+  maxHealth: 4
 --- !u!136 &1921250267
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 15;
 
-    [SerializeField] int maxHealth = 6; // The maximum health of the enemy
+    [SerializeField] int maxHealth = 4; // The maximum health of the enemy
     int currentHealth; // The current health of the enemy
 
 
@@ -34,9 +34,9 @@ public class Enemy : MonoBehaviour
 
     void ProcessHit()
     {
-        currentHealth -= 1; // reduce the current health by 1 when hit by the player
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
+        currentHealth -= 1; // reduce the current health by 1 when hit by the player
         if (currentHealth <= 0)
         {
             KillEnemy(); // if the current health is less than or equal to 0, call the KillEnemy method
