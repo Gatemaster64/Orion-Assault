@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8990554215193571690}
   - component: {fileID: 4315169111035081892}
   m_Layer: 0
-  m_Name: Hit particle
+  m_Name: Hit particle VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
