@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
         {
             KillEnemy(); // if the current health is less than or equal to 0, call the KillEnemy method
         }
-        scoreBoard.IncreaseScore(scorePerHit);
+        
     }
 
     void KillEnemy()
@@ -64,6 +64,8 @@ public class Enemy : MonoBehaviour
         // Sets the parent of the Transform component of vfx to the Transform component of parentGameObject 
         vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
+
+        scoreBoard.IncreaseScore(scorePerHit);
     }
 
     
