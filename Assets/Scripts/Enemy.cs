@@ -59,13 +59,12 @@ public class Enemy : MonoBehaviour
 
     void KillEnemy()
     {
+        scoreBoard.IncreaseScore(scorePerHit);
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
 
         // Sets the parent of the Transform component of vfx to the Transform component of parentGameObject 
         vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
-
-        scoreBoard.IncreaseScore(scorePerHit);
     }
 
     

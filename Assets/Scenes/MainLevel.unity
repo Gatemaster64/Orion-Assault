@@ -365,6 +365,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &160237460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7461564397545835153, guid: 8857d13127a7ffa4ba4fcc74ef40b8a0, type: 3}
+  m_PrefabInstance: {fileID: 677627023585718290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &343282919 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4749185423741511340, guid: bc1f7833147d8ed45b79e0bfd3e2acdb, type: 3}
@@ -574,12 +579,16 @@ PlayableDirector:
     value: {fileID: 1929625063}
   m_ExposedReferences:
     m_References:
+    - e3cfc41d371d7d948a700cd36344533c: {fileID: 160237460}
     - c5669b24ed1477f4ca11873c76038158: {fileID: 846999806}
+    - 33d2ba4f3335b9b4c89436f61ed81888: {fileID: 160237460}
     - f3aa10cc9bcc8534181c27b78cee4fb7: {fileID: 0}
     - 568e8d0ab5d7cdf46878bd47eebacde4: {fileID: 1782337709}
+    - c1db57ce71b2da842878fb3b2389cd80: {fileID: 160237460}
     - d77f2914856708642a2a1bdb4a544aaa: {fileID: 1782337709}
     - 2f79572e3bd1b5046b213e08c7926677: {fileID: 0}
     - d2785cc7e58b9d449a726b259f5031cf: {fileID: 360664115}
+    - becaf3ce73d699549bd5f021cc3a33a6: {fileID: 160237460}
     - f40f87be17d1fbd41a5399f0fce0a19c: {fileID: 672920396}
 --- !u!4 &953690758
 Transform:
