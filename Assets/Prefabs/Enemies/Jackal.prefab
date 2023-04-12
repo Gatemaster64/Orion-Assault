@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 4641335638810255530}
   - component: {fileID: 4633205726726488388}
   - component: {fileID: 1131015270408705415}
+  - component: {fileID: 3736224417793415340}
   m_Layer: 0
   m_Name: Jackal
   m_TagString: Untagged
@@ -457,11 +458,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959698c409008c479ad93b821754a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
+  deathFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 15
   maxHealth: 2
+--- !u!65 &3736224417793415340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4619527086278168888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.945585, y: 1.4957151, z: 13.117715}
+  m_Center: {x: 0, y: -0.000007659197, z: 0}
 --- !u!1 &4870630288296012040
 GameObject:
   m_ObjectHideFlags: 0

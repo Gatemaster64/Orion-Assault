@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
      // script to instantiate enemy vfx and parent it under empty gameobject.
 
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 15;
 
@@ -59,11 +59,12 @@ public class Enemy : MonoBehaviour
 
     void KillEnemy()
     {
+
         scoreBoard.IncreaseScore(scorePerHit);
-        GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
 
         // Sets the parent of the Transform component of vfx to the Transform component of parentGameObject 
-        vfx.transform.parent = parentGameObject.transform;
+        fx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 

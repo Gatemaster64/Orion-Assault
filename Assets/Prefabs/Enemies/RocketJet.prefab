@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 1330744956519555274}
   - component: {fileID: 3860488907551233024}
   - component: {fileID: 2876968165383052812}
+  - component: {fileID: -5312759467240758816}
   m_Layer: 0
   m_Name: RocketJet
   m_TagString: Untagged
@@ -502,11 +503,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959698c409008c479ad93b821754a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
+  deathFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 15
   maxHealth: 1
+--- !u!65 &-5312759467240758816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356248545547187669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.3756166, y: 2.873394, z: 10.557743}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3485056379112389396
 GameObject:
   m_ObjectHideFlags: 0

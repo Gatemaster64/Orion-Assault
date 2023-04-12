@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959698c409008c479ad93b821754a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
+  deathFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   scorePerHit: 15
   maxHealth: 2
@@ -2619,7 +2619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959698c409008c479ad93b821754a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
+  deathFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   scorePerHit: 15
   maxHealth: 2
@@ -2741,7 +2741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4959698c409008c479ad93b821754a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
+  deathFX: {fileID: 8573469390080928231, guid: 05f01fb7fe5d28646a822f10beb4cd2b, type: 3}
   hitVFX: {fileID: 8573469390080928231, guid: 719701b3feab5cc4dbadd9ac7bce6d66, type: 3}
   scorePerHit: 15
   maxHealth: 2
@@ -2826,6 +2826,12 @@ PlayableDirector:
   - key: {fileID: -3799398639219672142, guid: aa03e7cd6ccf10641a934a7e30dd8144, type: 2}
     value: {fileID: 0}
   - key: {fileID: 1804215297429997818, guid: aa03e7cd6ccf10641a934a7e30dd8144, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4638550862974281200, guid: aa03e7cd6ccf10641a934a7e30dd8144, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6323619605283033449, guid: aa03e7cd6ccf10641a934a7e30dd8144, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2301536679570478549, guid: aa03e7cd6ccf10641a934a7e30dd8144, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
